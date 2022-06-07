@@ -1,0 +1,13 @@
+<div *ngIf="selectedHero">
+  <h2>Héroe seleccionado: {{ selectedHero.name }}</h2>
+  <div>id: {{ selectedHero.id }}</div>
+  <div>
+    <label for="heroe">Cambiar el nombre:</label>
+    <input
+      type="text"
+      name="heroe"
+      [(ngModel)]="selectedHero.name"
+      placeholder="Nombre"
+    />
+  </div>
+</div>
